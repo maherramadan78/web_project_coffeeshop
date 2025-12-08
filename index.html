@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt">
   <head>
     <title>Triple Coffee</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="projecto 4 coffee shop" />
-    <meta name="author" content="Maher" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta name="description" content="Project 4 Coffe shop with HTML and CSS" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Felipe Nehmi" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -22,9 +23,10 @@
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
-            alt="Logotipo de la coffee shop"
+            alt="Triple Peaks Library Logo"
             class="nav__logo"
           />
+          <!-- Putting navigation links in a list is supposed to be the best practice of writing the semantic code since it allows screen readers to pause between each link instead of reading all the links as a sentence. -->
           <ul class="nav__links">
             <li>
               <a class="nav__link" href="#recipes">Receitas</a>
@@ -37,43 +39,31 @@
             </li>
           </ul>
         </nav>
-
-        <div class="header__content">
-          <div class="header__text">
-            <h1 class="header__title">
-              <span class="header__span-accent">Café de especialidad</span>
-              en Triple Peaks
-            </h1>
-            <p class="header__description">
-              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
-              café para darte energía y motivar tu creatividad.
-            </p>
-          </div>
-          <img
-            src="./images/inside_coffee_shop.png"
-            alt="Ilustración del interior del café Triple Peaks"
-            class="header__image"
-          />
-        </div>
-
+        <h1 class="header__title">
+          `
+          <span class="header__span-accent">Café especial</span>
+          na&nbsp;biblioteca&nbsp;Triple&nbsp;Peaks
+        </h1>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Illustration 'Inside the coffee shop'"
+          class="header__image"
+        />
         <div class="header__footer">
-          <div class="header__schedule">
-            <p class="header__paragraph">
-              <span class="header__paragraph-bold">Horario:</span>
-            </p>
-            <p class="header__paragraph">
-              Lunes a Viernes (de 10:00h a 19:00h)
-            </p>
-            <p class="header__paragraph">
-              Sábados y Domingos (de 11:00h a 18:00h)
-            </p>
+          <div>
+            <p class="header__paragraph">Horários:</p>
+            <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
+            <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
           </div>
-          <p class="header__address">
-            Avenida del Éxito 200, Ciudad Triple Peaks
+          <p class="header__paragraph">
+            200 Success Avenue, a cidade de Triple Peaks
           </p>
         </div>
       </header>
-
       <main class="content">
         <section class="recipes" id="recipes">
           <h2 class="recipes__title">Receitas</h2>
@@ -109,12 +99,9 @@
             </li>
           </ul>
         </section>
+        <section class="reservation" id="reservation"></section>
       </main>
-        <footer class="footer" id="footer">
-        <div class="footer__content">
-        <p class="footer__copyright">&copy; 2023 Your name</p>
-        <div class="footer__circle"></div>
-      </footer>
+      <footer class="footer" id="footer"></footer>
     </div>
   </body>
 </html>

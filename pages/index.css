@@ -233,7 +233,7 @@
 }
 
 .reservation__title {
-  font-family: "Inter" Arial, sans-serif;
+  font-family: "Inter";
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
@@ -241,7 +241,7 @@
   color: #333;
   text-align: center;
   padding: 8px 32px;
-  margin-bottom: 80px;
+  margin: 0 auto 80px auto;
   background-color: transparent;
 }
 
